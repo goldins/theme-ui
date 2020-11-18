@@ -29,15 +29,15 @@ export interface BoxProps
  * Use the Box component as a layout primitive to add margin, padding, and colors to content.
  * @see https://theme-ui.com/components/box
  */
-export const Box: StyledComponent<React.ComponentProps<'div'> & BoxOwnProps>
+export const Box: StyledComponent<BoxOwnProps, BoxProps>
 
-export type FlexStyleProps = BoxOwnProps
+export type FlexOwnProps = BoxOwnProps
 export type FlexProps = BoxProps
 /**
  * Use the Flex component to create flexbox layouts.
  * @see https://theme-ui.com/components/flex
  */
-export const Flex: StyledComponent<React.ComponentProps<'div'> & FlexStyleProps>
+export const Flex: StyledComponent<FlexOwnProps, FlexProps>
 
 export interface GridProps extends BoxProps {
   /**
